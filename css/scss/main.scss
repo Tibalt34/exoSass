@@ -1,0 +1,28 @@
+$couleur :green;
+html{
+  background-color: $couleur;
+}
+
+@mixin bordures ($valeur) {
+  -webkit-border-radius: $valeur;
+  -moz-border-radius: $valeur;
+  -ms-border-radius:$valeur;
+  border-radius:$valeur;
+  border: 2px solid grey;
+}
+@mixin dimension ($hauteur,$largeur){
+  width:$largeur;
+  height:$hauteur;
+
+}
+
+html{
+  background-color: $couleur;
+}
+nav{
+  width:80%;
+  background-color: white;
+  @include bordures (10px);
+  background-color: lightblue;
+  border: 2px solid blue;
+}
